@@ -1,7 +1,7 @@
 module.exports = {
   title: "vuepress-theme-reco",
   description: '代码千万行, 注释第一行, 编码不规范, 同事两行泪',
-  dest: 'public',
+  dest: './docs/dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     // 在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化
