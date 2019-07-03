@@ -1,7 +1,8 @@
 module.exports = {
-  title: "vuepress-theme-reco",
-  description: '代码千万行, 注释第一行, 编码不规范, 同事两行泪',
+  title: "Black House",
+  description: '代码千万行, 注释第一行, 编码不规范, 同事两行泪.',
   dest: './docs/dist',
+  base: '/vue-blog/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     // 在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化
@@ -9,6 +10,8 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
+    type: 'blog',
+    huawei: false,
     nav: [
       { text: 'Home', link: '/', icon: 'reco-home' },
       // 时间轴
@@ -18,10 +21,10 @@ module.exports = {
         icon: 'reco-message',
         items: [
           { text: 'GitHub', link: 'https://github.com/dong4j', icon: 'reco-github' },
-          { text: '简书', link: 'https://www.jianshu.com/u/cd674a19515e', icon: 'reco-jianshu' },
-          { text: 'CSDN', link: 'https://blog.csdn.net/recoluan', icon: 'reco-csdn' },
-          { text: '博客圆', link: 'https://www.cnblogs.com/luanhewei/', icon: 'reco-bokeyuan' },
-          { text: 'WeChat', link: 'https://mp.weixin.qq.com/s/mXFqeUTegdvPliXknAAG_A', icon: 'reco-wechat' },
+          // { text: '简书', link: 'https://www.jianshu.com/u/cd674a19515e', icon: 'reco-jianshu' },
+          // { text: 'CSDN', link: 'https://blog.csdn.net/recoluan', icon: 'reco-csdn' },
+          // { text: '博客圆', link: 'https://www.cnblogs.com/luanhewei/', icon: 'reco-bokeyuan' },
+          // { text: 'WeChat', link: 'https://mp.weixin.qq.com/s/mXFqeUTegdvPliXknAAG_A', icon: 'reco-wechat' },
         ]
       }
     ],
