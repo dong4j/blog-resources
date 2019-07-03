@@ -13,4 +13,4 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:dong4j/vue-blog.git master:gh-pages
+git push -f git@github.com:dong4j/dong4j.github.io.git master:master

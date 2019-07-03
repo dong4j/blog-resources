@@ -4,10 +4,9 @@ date: 2015-01-01
 categories:
   - Other
 tags: 
-  - 电影
+  - Other
 ---
 
-# 使用 Vuepress 搭建博客
 
 ## Vuepress 介绍
 
@@ -685,3 +684,39 @@ yarn install
 
 yarn dev
 ```
+
+
+
+## Github pages
+
+github pages 分为 2 中
+
+- 个人站点
+- 项目站点
+
+2 种站点的 url 有点区别, 在使用 vuepress 部署时遇到点坑, 这里记录一下
+
+### 个人站点
+
+个人站点在创建时, 必须使用 `username.github.io` 作为项目名, 这样不需要其他设置, 只需要 push html 代码即可直接部署
+
+使用 vuepress 时, 不再需要设置 `base`
+
+```javascript
+title: "Black House",
+  description: '代码千万行, 注释第一行, 编码不规范, 同事两行泪.',
+  dest: './docs/dist',
+  // 如果使用个人站点, 不需要配置 base
+  // base: '/vue-blog/',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // 在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+  ],
+```
+
+### 项目站点
+
+项目站点 push 需要配置 github pages, url 为 `https://username.github.io/projectname/`
+
+这时必须配置 `base`, 不然将导致页面样式错误
