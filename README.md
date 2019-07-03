@@ -14,6 +14,8 @@ yarn dev
 
 # build
 yarn build
+
 ```
 
 直接使用 `deploy.sh` 部署到 github pages 上
+

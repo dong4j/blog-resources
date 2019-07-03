@@ -7,6 +7,11 @@ tags:
   - Other
 ---
 
+::: tip
+使用 vuepress 搭建自己的博客
+:::
+
+<!-- more-->
 
 ## Vuepress 介绍
 
@@ -687,7 +692,7 @@ yarn dev
 
 
 
-## Github pages
+## Github Pages
 
 github pages 分为 2 中
 
