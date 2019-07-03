@@ -4,7 +4,7 @@ module.exports = {
   dest: './docs/dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    // 在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化
+    // 在移动端, 搜索框在获得焦点时会放大, 并且在失去焦点后可以左右滚动, 这可以通过设置元来优化
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
@@ -30,11 +30,11 @@ module.exports = {
     // 博客设置
     blogConfig: {
       category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
+        location: 2, // 在导航栏菜单中所占的位置, 默认2
         text: 'Category' // 默认 “分类”
       },
       tag: {
-        location: 3, // 在导航栏菜单中所占的位置，默认3
+        location: 3, // 在导航栏菜单中所占的位置, 默认3
         text: 'Tag' // 默认 “标签”
       }
     },

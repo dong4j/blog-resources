@@ -15,13 +15,13 @@ tags:
 
 ## Vuepress 介绍
 
-官网：[https://vuepress.vuejs.org/](https://yq.aliyun.com/go/articleRenderRedirect?url=https://vuepress.vuejs.org/)
+官网: [https://vuepress.vuejs.org/](https://yq.aliyun.com/go/articleRenderRedirect?url=https://vuepress.vuejs.org/)
 
-类似 hexo 一个极简的静态网站生成器，用来写技术文档不能在爽。当然搭建成博客也不成问题。
+类似 hexo 一个极简的静态网站生成器, 用来写技术文档不能在爽. 当然搭建成博客也不成问题. 
 
 ## Vuepress 特点
 
-- 响应式，也可以自定义主题与 hexo 类似
+- 响应式, 也可以自定义主题与 hexo 类似
 - 内置 markdown (还增加了一些扩展), 并且可以在其使用 Vue 组件
 - Google Analytics 集成
 - PWA 自动生成 Service Worker
@@ -71,17 +71,17 @@ mkdir docs
 ### 写作
 
 ```shell
-yarn docs:dev # 或者：npm run docs:dev
+yarn docs:dev # 或者: npm run docs:dev
 ```
 
-也就是运行开发环境，直接去 docs 文件下书写文章就可以，打开 `http://localhost:8080/` 可以预览
+也就是运行开发环境, 直接去 docs 文件下书写文章就可以, 打开 `http://localhost:8080/` 可以预览
 
 ### 构建
 
-build 生成静态的 HTML 文件，默认会在 `.vuepress/dist` 文件夹下
+build 生成静态的 HTML 文件, 默认会在 `.vuepress/dist` 文件夹下
 
 ```shell
-yarn docs:build # 或者：npm run docs:build
+yarn docs:build # 或者: npm run docs:build
 ```
 
 ## 基本配置
@@ -126,13 +126,13 @@ module.exports = {
 }
 ```
 
-如图：
+如图: 
 
 ![img](https://wx1.sinaimg.cn/large/99a97bd9ly1fr1oz3elibj20fg02bjr9.jpg)
 
 ### 侧边栏配置
 
-可以省略`.md` 扩展名，同时以 `/` 结尾的路径将会被视为 `*/README.md`
+可以省略`.md` 扩展名, 同时以 `/` 结尾的路径将会被视为 `*/README.md`
 
 ```javascript
 module.exports = {
@@ -245,7 +245,7 @@ module.exports = {
 ### 设置基础路径
 
 在 `config.js` 设置 base
-例如：你想要部署在 [https://foo.github.io](https://yq.aliyun.com/go/articleRenderRedirect?url=https://foo.github.io) 那么设置 base 为 `/`,base 默认就为 `/`, 所以可以不用设置
+例如: 你想要部署在 [https://foo.github.io](https://yq.aliyun.com/go/articleRenderRedirect?url=https://foo.github.io) 那么设置 base 为 `/`,base 默认就为 `/`, 所以可以不用设置
 想要部署在 [https://foo.github.io/bar/,](https://yq.aliyun.com/go/articleRenderRedirect?url=https://foo.github.io/bar/,) 那么 `base` 应该被设置成 `"/bar/"`
 
 ```javascript
@@ -254,18 +254,18 @@ module.exports = {
 }
 ```
 
-`base` 将会自动地作为前缀插入到所有以 `/` 开始的其他选项的链接中，所以你只需要指定一次。
+`base` 将会自动地作为前缀插入到所有以 `/` 开始的其他选项的链接中, 所以你只需要指定一次. 
 
 ### 构建与自动部署
 
-用 [gitHub](https://yq.aliyun.com/go/articleRenderRedirect?url=https://github.com) 的 pages 或者 [coding](https://yq.aliyun.com/go/articleRenderRedirect?url=https://coding.net/r/O5YOFA) 的 pages 都可以，也可以搭建在自己的服务器上。
+用 [gitHub](https://yq.aliyun.com/go/articleRenderRedirect?url=https://github.com) 的 pages 或者 [coding](https://yq.aliyun.com/go/articleRenderRedirect?url=https://coding.net/r/O5YOFA) 的 pages 都可以, 也可以搭建在自己的服务器上. 
 将 `dist` 文件夹中的内容提交到 git 上或者上传到服务器就好
 
 ```javascript
-yarn docs:build # 或者：npm run docs:build
+yarn docs:build # 或者: npm run docs:build
 ```
 
-> 另外可以弄一个脚本，设置持续集成，在每次 push 代码时自动运行脚本
+> 另外可以弄一个脚本, 设置持续集成, 在每次 push 代码时自动运行脚本
 
 deploy.sh
 
@@ -300,14 +300,14 @@ cd -
 ## 注意事项 (坑)
 
 - 把你想引用的资源都放在`.vuepress` 目录下的 `public` 文件夹
-- 给 git 仓库绑定了独立域名后，记得修改 `base` 路径
+- 给 git 仓库绑定了独立域名后, 记得修改 `base` 路径
 - 设置侧边栏分组后默认会自动生成 上 / 下一篇链接
 - 设置了自动生成侧边栏会把侧边栏分组覆盖掉
 - 设置 PWA 记得开启 SSL
 
 ## [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
 
-该主题几乎继承 `VuePress` 默认主题的一切功能，所以本文档只负责介绍该主题扩展的功能，如果您想要了解默认主题的一些功能，请移步 [官方文档](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html)。
+该主题几乎继承 `VuePress` 默认主题的一切功能, 所以本文档只负责介绍该主题扩展的功能, 如果您想要了解默认主题的一些功能, 请移步 [官方文档](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html). 
 
 ### Branch
 
@@ -349,11 +349,11 @@ module.exports = {
      // 博客设置
     blogConfig: {
       category: {
-        location: 2,     // 在导航栏菜单中所占的位置，默认2
+        location: 2,     // 在导航栏菜单中所占的位置, 默认2
         text: 'Category' // 默认文案 “分类”
       },
       tag: {
-        location: 3,     // 在导航栏菜单中所占的位置，默认3
+        location: 3,     // 在导航栏菜单中所占的位置, 默认3
         text: 'Tag'      // 默认文案 “标签”
       }
     }
@@ -376,12 +376,12 @@ tags:
 
 ::: tip
 
-请注意， `categories` 和 `categories` 要以数组的方式填写。
+请注意,  `categories` 和 `categories` 要以数组的方式填写. 
 
 :::
 
 
-某些页面的侧边栏为 `false` 呢？因为您启用了分类，这与自定义侧边栏功能有点冲突，所以您全局打开自动侧边栏功能，然后在不需要侧标记的地方关闭它。
+某些页面的侧边栏为 `false` 呢？因为您启用了分类, 这与自定义侧边栏功能有点冲突, 所以您全局打开自动侧边栏功能, 然后在不需要侧标记的地方关闭它. 
 
 ### 添加时间轴
 
@@ -428,7 +428,7 @@ tags:
 
 ### 评论 (valine)
 
-带有内置了 valine 评论功能，如果要打开此功能，只需配置你的 `config.js`
+带有内置了 valine 评论功能, 如果要打开此功能, 只需配置你的 `config.js`
 
 ```javascript
 // 更改 /docs/.vuepress/config.js
@@ -452,9 +452,9 @@ module.exports = {
 |    appId    | 从 LeanCloud 的应用中得到的 appId                            |     无     |   yes    |
 |   appKey    | 从 LeanCloud 的应用中得到的 APP Key                          |     无     |   yes    |
 | placeholder | 评论框占位提示符                                             | just go go |    no    |
-|   notify    | 评论回复邮件提醒，请参考[配置](https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置) |   false    |    no    |
+|   notify    | 评论回复邮件提醒, 请参考[配置](https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置) |   false    |    no    |
 |   verify    | 验证码服务                                                   |   false    |    no    |
-|   avatar    | Gravatar 头像展示方式，更多信息请查看[头像配置](https://valine.js.org/avatar.html) |   retro    |    no    |
+|   avatar    | Gravatar 头像展示方式, 更多信息请查看[头像配置](https://valine.js.org/avatar.html) |   retro    |    no    |
 |   visitor   | 文章访问量统计                                               |    true    |    no    |
 |  recordIP   | recordIP                                                     |   false    |    no    |
 
@@ -462,7 +462,7 @@ module.exports = {
 
 ::: tip
 
-如果 valine 的获取评论的接口报 `404` 错误的话，不用担心，这是因为你还没有添加评论，只要存在 1 条评论，就不会报错了，这是 `leanCloud` 的请求处理操作而已。
+如果 valine 的获取评论的接口报 `404` 错误的话, 不用担心, 这是因为你还没有添加评论, 只要存在 1 条评论, 就不会报错了, 这是 `leanCloud` 的请求处理操作而已. 
 
 :::
 
@@ -470,7 +470,7 @@ module.exports = {
 
 #### 项目加密
 
-如果项目具有私密性，不希望被公开，只有填入密钥登录后（关闭标签后登录失效），才能进入内容页面。以数组的格式设置 `keys`，可以设置多个密码，数组的值必须是字符串。
+如果项目具有私密性, 不希望被公开, 只有填入密钥登录后（关闭标签后登录失效）, 才能进入内容页面. 以数组的格式设置 `keys`, 可以设置多个密码, 数组的值必须是字符串. 
 
 ```javascript
 // 更改 /docs/.vuepress/config.js
@@ -490,7 +490,7 @@ module.exports = {
 
 #### 文章加密
 
-如果项目是公开的，而某些文章可能需要加密，需要在 `frontmatter` 以数组的格式设置 `keys`，可以设置多个密码，数组的值必须是字符串。
+如果项目是公开的, 而某些文章可能需要加密, 需要在 `frontmatter` 以数组的格式设置 `keys`, 可以设置多个密码, 数组的值必须是字符串. 
 
 ```javascript
 ---
@@ -506,7 +506,7 @@ keys:
 
 #### 移动端优化
 
-在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化。
+在移动端, 搜索框在获得焦点时会放大, 并且在失去焦点后可以左右滚动, 这可以通过设置元来优化. 
 
 ```javascript
 module.exports = {
@@ -518,7 +518,7 @@ module.exports = {
 
 #### 图标
 
-您可以在导航菜单中添加图标，如下所示：
+您可以在导航菜单中添加图标, 如下所示: 
 
 ```javascript
 { text: 'Tags', link: '/tags/', icon: 'reco-tag' }
@@ -535,7 +535,7 @@ module.exports = {
   themeConfig: {
     // 备案号
     record: '京ICP备17067634号-1',
-    // 项目开始时间，只填写年份
+    // 项目开始时间, 只填写年份
     startYear: '2017'
   }
 }
@@ -558,7 +558,7 @@ module.exports = {
 
 ```bash
 ---
-title: 你还没真的努力过，就轻易输给了懒惰
+title: 你还没真的努力过, 就轻易输给了懒惰
 date: 2015-04-23
 categories: article
 author: 渡渡
@@ -567,7 +567,7 @@ author: 渡渡
 
 #### 华为文案
 
-如果不希望显示 “华为” 文案，可以这样关闭。
+如果不希望显示 “华为” 文案, 可以这样关闭. 
 
 ```javascript
 module.exports = {
@@ -579,7 +579,7 @@ module.exports = {
 
 ### 首页配置
 
-主题的主页的默认风格偏文档，并不像一个博客，所以从 `vuepress-theme-reco@1.0.0-alpha.25` 开始，增加博客风格首页布局。
+主题的主页的默认风格偏文档, 并不像一个博客, 所以从 `vuepress-theme-reco@1.0.0-alpha.25` 开始, 增加博客风格首页布局. 
 
 #### 对比
 
@@ -595,7 +595,7 @@ module.exports = {
 
 ##### heroImage
 
-- 如果您的 heroImage 具有您的网站标题，则可能需要设置值 `isShowTitleInHome` `false` 以使标题不显示。
+- 如果您的 heroImage 具有您的网站标题, 则可能需要设置值 `isShowTitleInHome` `false` 以使标题不显示. 
 
 ```bash
 # this is your homepage
@@ -607,7 +607,7 @@ isShowTitleInHome: false
 ---
 ```
 
-- 如果你想改变 heroImage 的风格，你可以设置值 `heroImageStyle` 来实现你想要的效果
+- 如果你想改变 heroImage 的风格, 你可以设置值 `heroImageStyle` 来实现你想要的效果
 
 ```bash
 # 这是你的主页 
@@ -662,7 +662,7 @@ faceImage: '/head.png'
 
 ![1.png](https://vuepress-theme-reco.recoluan.com/assets/img/12.0f90b412.png)
 
-在 markdown 代码中，您将看到注释，注释前面的代码将显示在列表页面上的文章摘要中。
+在 markdown 代码中, 您将看到注释, 注释前面的代码将显示在列表页面上的文章摘要中. 
 
 ### vuepress-theme-reco-cli
 
@@ -715,7 +715,7 @@ title: "Black House",
   // base: '/vue-blog/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    // 在移动端，搜索框在获得焦点时会放大，并且在失去焦点后可以左右滚动，这可以通过设置元来优化
+    // 在移动端, 搜索框在获得焦点时会放大, 并且在失去焦点后可以左右滚动, 这可以通过设置元来优化
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
 ```
