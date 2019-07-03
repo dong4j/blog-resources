@@ -32,34 +32,34 @@ tags:
 
 初始化项目
 
-```shell
+```bash
 yarn init -y
 # 或者 npm init -y
 ```
 
 安装 vuepress
 
-```shell
+```bash
 yarn add -D vuepress
 # 或者 npm install -D vuepress
 ```
 
 全局安装 vuepress
 
-```shell
+```bash
 yarn global add vuepress
 # 或者 npm install -g vuepress
 ```
 
 新建一个 docs 文件夹
 
-```shell
+```bash
 mkdir docs
 ```
 
 设置下 package.json
 
-```shell
+```bash
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -70,7 +70,7 @@ mkdir docs
 
 ### 写作
 
-```shell
+```bash
 yarn docs:dev # 或者: npm run docs:dev
 ```
 
@@ -80,7 +80,7 @@ yarn docs:dev # 或者: npm run docs:dev
 
 build 生成静态的 HTML 文件, 默认会在 `.vuepress/dist` 文件夹下
 
-```shell
+```bash
 yarn docs:build # 或者: npm run docs:build
 ```
 
@@ -92,7 +92,7 @@ yarn docs:build # 或者: npm run docs:build
 
 ### 网站信息
 
-```shell
+```bash
 module.exports = {
   title: '游魂的文档',
   description: 'Document library',
@@ -269,7 +269,7 @@ yarn docs:build # 或者: npm run docs:build
 
 deploy.sh
 
-```shell
+```bash
 #!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误
@@ -328,7 +328,7 @@ yarn add vuepress-theme-reco
 
 ### 使用
 
-```shell
+```bash
 // 修改 /docs/.vuepress/config.js
 
 module.exports = {

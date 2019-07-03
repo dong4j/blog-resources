@@ -1,6 +1,6 @@
 ## 基于 Vuepress + vuepress-theme-reco 搭建的博客站点
 
-```shell
+```bash
 # install cli
 yarn global add vuepress-theme-reco-cli
 
